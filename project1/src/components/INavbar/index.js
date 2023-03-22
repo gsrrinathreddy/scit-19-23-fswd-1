@@ -12,8 +12,9 @@ import Button from '@mui/material/Button';
 import Tooltip from '@mui/material/Tooltip';
 import MenuItem from '@mui/material/MenuItem';
 import AdbIcon from '@mui/icons-material/Adb';
+import {Link} from 'react-router-dom'; 
 
-const pages = ['Aboout Me', 'Qualification', 'Skills','Hobbies','Workshops','Certificaitons','Projects'];
+const pages = ['AboutMe', 'Qualification', 'Skills','Hobbies','Workshops','Certifications','Projects'];
 const settings = ['Profile', 'Account', 'Dashboard', 'Logout'];
 
 function INavbar() {
@@ -115,13 +116,16 @@ function INavbar() {
           </Typography>
           <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>
             {pages.map((page) => (
-              <Button
+            <Link to={page}>
+                <Button
                 key={page}
                 onClick={handleCloseNavMenu}
                 sx={{ my: 2, color: 'white', display: 'block' }}
-              >
-                {page}
-              </Button>
+                 >
+                    {page}
+                </Button>
+            </Link>
+            
             ))}
           </Box>
 
