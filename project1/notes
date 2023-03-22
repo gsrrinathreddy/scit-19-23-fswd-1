@@ -1,0 +1,30 @@
+In React everything is a component.
+What is a component? 
+    Component is a pure JS function which returns JSX. Component can be called as a Custom JS Element or tag. 
+What is JSX? 
+  Javascript extended markup language to control the display of the page through JS.
+
+What is HTML?
+  Hyper text markup language. 
+What is a markup language?
+  markup language is a language which is used to control the display of the page.  
+
+  steps for react-router-dom
+
+  1. import {BrowserRouter} from 'react-router-dom' in index.js file
+  2. wrap app component inside the browser component 
+   <BrowserRouter>
+      <App /> 
+    </BrowserRouter>
+
+  3. Define the Routes to your pages in App.js
+     import {Routes,Route} from 'react-router-dom';
+      <Routes>
+      <Route path='/Aboute Me' element={<AboutMe/>}/>
+      <Route path='/Qualification' element={<Qualification/>}/>
+      <Route path='/Skills' element={<Skills/>}/>
+    </Routes>
+
+  4. Add navigation link to the buttons so that the pages open. 
+     In Navbar
+     import {Link} from 'react=router-dom'; and wrap the Button Component inside the Link component
