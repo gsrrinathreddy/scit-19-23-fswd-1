@@ -8,6 +8,8 @@ import AboutMe from './pages/AboutMe';
 import Qualification from './pages/Qualification';
 import Skills from './pages/Skills';
 import Certifications from './pages/Certifications';
+import Hobbies from './pages/Hobbies'
+import Projects from './pages/Projects';
 
 function App() {
   return (
@@ -18,6 +20,8 @@ function App() {
       <Route path='/Qualification' element={<Qualification/>}/>
       <Route path='/Skills' element={<Skills/>}/>
       <Route path='/Certifications' element={<Certifications/>}/>
+      <Route path='/Hobbies' element={<Hobbies/>}/>
+      <Route path='/Projects' element={<Projects/>}/>
     </Routes>
     </div>
   );
